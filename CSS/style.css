@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(248, 252, 250);
+    background-color: rgb(21, 202, 112);
 }
 img{
      width: 200px; /*ancho de la imagen */
@@ -8,3 +8,16 @@ img{
 tr:hover{
   background-color: brown;
 }
+
+body{
+  background-color: aquamarine;
+}
+.formulario{
+  display: flex;
+  background-color: #fff;
+  height: 750px;
+  width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0 0)
+  
+}
+img
