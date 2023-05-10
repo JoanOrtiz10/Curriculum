@@ -3,275 +3,298 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'roboto', sans-serif;
-    
+body {
+    font-family: 'Roboto', sans-serif;
 }
-h1{
+h1 {
     font-size: 50px;
 }
-.contendor{
+
+.contenedor {
     width: 90%;
     max-width: 1400px;
     margin: auto;
     overflow: hidden;
 }
-header::before{
+
+header::before {
     content: "";
     display: block;
     margin-bottom: 80px;
 }
-nav{
+
+nav {
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background: rgb(255, 255, 255) ;
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 rgba(0,0,0, .2);
+    box-shadow: 1px 1px 10px 0 rgb(0,0,0,.2);
     position: fixed;
     top: 0;
     z-index: 100;
 }
-.nav{
+.nav {
     display: flex;
     height: 80px;
     width: 100%;
     align-items: center;
-
 }
+
 .enlaces-header{
     font-weight: 300;
     margin: auto;
 }
-.nav .enlaces-header a{
-    color: #5d6678;
+
+.nav .enlaces-header a {
+    color: #5d6678 ;
     text-decoration: none;
     margin-left: 20px;
     padding: 12px;
     border-radius: 10px;
-
 }
-.nav .enlaces-header a:hover{
+
+.nav .enlaces-header a:hover {
     color: #fff;
-    background-color: rgb(94, 159, 245);
-    border-color: rgb(94, 159, 245);
-    transition: all ease-in-out .4s;
+    background-color: rgb(115, 117, 0);
+    border-color: rgb(126, 139, 0);
+    transition: all ease-in-out .3s;
 }
-.hamburger{
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s ease-in;
-  z-index: 100;
-  display: none;
+
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+    display: none;
+}
+
+.hamburguer > i {
+    font-size: 25px;
+    line-height: 80px;
 
 }
-.hamburger > i{
-  font-size: 25px;
-  line-height: 80px;
 
-}
-.titulospro{
+
+.titulospro {
     text-align: left;
-    margin: 20px 0s;
-
+    margin: 20px 0;
 }
+
 .contenido-header{
     width: 80%;
     height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+
 }
 
-.contenido-header>img{
+.contenido-header > img {
     width: 300px;
     height: 300px;
     margin-left: 50px;
     animation: ease-in animacion 0.5s;
+}
 
+.textos-header {
+    margin: 0,0,0 30px;
 }
-.textos-header{
-    margin: 0 0 0 30px;
-}
-.contenido-header p{
+
+.contenido-header p {
     font-weight: 300;
     margin-top: 14px;
     color: #5d6678;
     text-align: justify;
 }
-@keyframes animacion{
-    0%{transform: scale(0);}
+
+@keyframes animacion {
+    0% {transform: scale(0);}
     100%{transform: scale(1);}
+
 }
 
-.contenido-header a{
+.contenido-header a {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: rgb(94, 159, 245);
-    color: #fff;
+    background-color: rgb(129, 127, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 12px 0;
     border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
-    box-shadow:  0 8px 32px rgba(97,31,31,0.46 );
+    box-shadow: 0 8px 32px rgba(5, 5, 5, 0.46);
 }
-/*### education######*/
-.section-education{
-    background-color: rgb(194, 217, 247);
+
+/*###############EDUCATION###############*/
+
+.section-education {
+    background-color: #5d6678;
 }
-.content-education{
+
+.content-education {
     display: flex;
     flex-wrap: wrap;
-    padding:  30px ;
+    padding-bottom: 30px ;
     justify-content: space-evenly;
-    
-
 }
-.section-education .title{
+
+.section-education .title {
     width: 100%;
     text-align: center;
     display: block;
     text-transform: uppercase;
     margin: 15px 0;
 }
+
 .education{
     width: 30%;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
 }
+
 .education:hover{
-    box-shadow: #5d6678;
-    transition: all ease ease-in-out .5s;
+    box-shadow: 0px 0px 20px gray;
+
 }
-.education a{
+
+.education a {
     text-decoration: none;
     font-size: 12px;
     color: gray;
-
 }
-.education:¿ a:hover{
-    color: red;
 
+.education a:hover{
+    color: rgb(255, 0, 0);
 }
 
 .education i {
-    color: red;
+    color: rgb(150, 148, 19);
     font-size: 30px;
-    border-radius: 50%;
-    border: 3px solid crimson;
+    border-radius: 50px;
+    border: 3px solid gray;
     width: 50px;
     height: 50px;
     line-height: 40px;
     text-align: center;
     align-items: center;
 }
-/*##########certificados#####*/
-.section-certificates .title{
+/*###############CERTIFICADO###############*/
+
+.certificados .title {
     display: block;
-    margin: 15px 0 0 0;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 15px 0 0 0;
+    margin-top: 15px;
 }
-.content-certificates{
+
+.content-certificados{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 30px;
-
 }
-.certificates{
-    width: 22%;
+
+.certificado {
+    background: gray;
+    border: 1px solid gray;
     border-radius: 5px;
-    border: 2px solid #d03d3d;
+    width: 22%;
     padding: 15px;
+    margin: 10px 10px;
     text-align: center;
-    margin-top: 15px;
-
 }
-.certificates img{
-    height: 80px;
+
+.certificado img {
+    height: 100px;
     width: auto;
+    border-radius: 5px;
 }
-.certificates a{
+
+.certificado a {
+    color: rgb(255, 255, 255);
     font-size: 12px;
-    color: gray;
     text-decoration: none;
-
-}
-.certificates:hover{
-    background-color: rgb(139, 139, 250);
-    box-shadow: 0 0 8px gray;
-   
-    color: #fff;
-    transform: scale(1.1);
-    transition: all ease-in-out .7s;
-}
-.certificates a:hover{
-    color: #fff;
 }
 
-/*########## FOOTER ######*/
+.certificado a:hover {
+    color: #30394d;
+}
+
+.certificado:hover {
+    background-color: rgb(129, 127, 0);
+    color: #fff;
+    transition: ease-in-out .3s;
+}
+
+/*###############FOOTER###############*/
+
 footer{
-    background: rgb(90,70,70);
+    background: rgb(70,70,70);
     padding: 50px 0 20px 0;
     overflow: hidden;
-    display: flex;
+    display: flex ;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
+
 }
 .partFooter{
     width: 22%;
     text-align: center;
+}
 
-}
-.partFooterimg{
-    width: 40%;
-}
+.partFooter img{
+    width: 70%;
+}   
+
 .partFooter h4{
     color: #fff;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
-    background-color: rgb(94, 159, 245);
+    background-color: rgb(129, 127, 0);
     border-radius: 5px;
-    border: 1px solid rgb(94, 159, 245);
+    border: 1px solid rgb(129, 127, 0);
     padding: 5px;
 }
 
-.contact{
+.contact {
     margin: 10px;
     display: block;
     text-align: left;
 }
-.contact > i{
+
+.contact > i {
+    color: #fff;
     float: left;
     margin: 0 0 0 10px;
-    color: #fff;
     border: 1px solid #fff;
-    border-radius: 50%;
+    border-radius: 50px;
     height: 30px;
     width: 30px;
     line-height: 28px;
     text-align: center;
     align-items: center;
 }
-.contact > p{
+
+.contact > p {
     margin-left: 50px;
     align-items: center;
     line-height: 28px;
     font-weight: 500;
     color: #fff;
 }
+
 .partFooter > a {
     display: block;
     color: #fff;
@@ -280,11 +303,13 @@ footer{
     font-weight: 500;
     padding: 5px;
 }
-.partFooter > a:hover{
-    background-color: rgb(94, 159, 245);
-    transition:  all ease-in-out .6s;
+
+.partFooter > a :hover{
+    background-color: rgb(129, 127, 0);
+    transition: all ease-in-out .6s;
 }
-.social-media > a > {
+
+.social-media > a > i {
     font-size: 23px;
     color: #fff;
     display: inline-block;
@@ -296,26 +321,24 @@ footer{
     margin-top: 10px;
     text-align: center;
     margin-right: 5px;
-    transition:  all ease-in-out .6s;
-}
-.social-media > a > i:hover{
-   background-color: rgb(94, 159, 245);
-   border-color: rgb(94, 159, 245);
-   
-}
-#foto{
-    border: 5px solid red ;
-    border-radius: 30px;
+    transition: all ease-in-out .6s;
 }
 
-/*#######BREAKPOINTS##########*/
-@media screen and(max-width:700px) {
-    .hamburger{
+.social-media > a > i:hover {
+    background-color: rgb(129, 127, 0);
+    border-color: rgb(129, 127, 0);
+}
+
+/*###############breakpoint###############*/
+
+@media screen and (max-width:700px){
+    .hamburguer{
         display: block;
     }
-    .enlaces-header{
+
+    .enlaces-header {
         position: fixed;
-        background-color: #d03d3d;
+        background-color: red;
         top: 0;
         right: 0;
         width: 100%;
@@ -324,5 +347,27 @@ footer{
         flex-direction: column;
         text-align: center;
         align-items: center;
+        clip-path: circle(0.0% at 0 0);
+        transition: all ease-in-out .6s ;
+
     }
+
+    .nav .hamburgueropen {
+        clip-path: circle(150% at 0 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 50%;
+        background-color: rgb(114, 25, 25);
+    }
+
+    .nav .enlaces-header a:hover {
+        color: red;
+        background-color: #fff;
+    }
+    
 }
