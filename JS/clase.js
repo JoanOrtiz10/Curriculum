@@ -31,7 +31,7 @@ if(10>5){
 let j=5;
 let k=10;
 
-while(k>=j){
+while(k>j){
     console.log("Entra");
     j++
 }

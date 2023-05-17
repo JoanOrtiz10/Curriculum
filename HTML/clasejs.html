@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Joan Ortiz</h1>
+    <input type="text " id="variable">
+    <button onclick="name_fuction()" id="name_event">calcular</button>
+    <script>
+        console.log("ingresa");
+    //VARIABLES
+    const nameuno= "esto es cualquier cosa";
+    var name_dos= "esto es cualquier cosa";
+    let nameTres= "esto es cualquier cosa";
+    console.log(nameuno + ""+name_dos + ""+nameTres);
+    //TIPOS DE DATOS
+    let num_a=10;
+    let num_b=5.5;
+    let boolean= false ;
+    let stringvar="mi nombre es ";
+    let arraynum=[ 1,2,3,4,5,"6","7","8"];
+    let dias_semana=[ "lunes","martes","miercoles","jueves","viernes"];
+    let users=[ 
+    {name:"joan", lest_name:"angarita",age:20},
+    {name:"ortiz", lest_name:"sanchez",age:20},
+    {name:"gomez", lest_name:"jacome",age:20}
+    
+    ]
+    //Operadores aritmeticos + - / * %
+    let suma = num_a+num_b;
+    let resta=num_a-num_b;
+    let multi=num_a*num_b;
+    let divi=num_a/num_b;
+    let module=num_a%num_b;
+    let expo=
+    console.log ("suma"+suma+"resta"+resta );
+    //operadores comparacion = / == / === / <> / <= / >= /  < />
+    //operadores logicos  AND && / QR
+    console.log(boolean+" _ _ "+ !boolean );
+    //estructuras condicionales if/else/else if /switch(breack)
+    //estructuras repetitivas for / while / do while 
+    let long_nameuno= nameuno.length;
+    console.log(long_nameuno);
+    if (long_nameuno >= 22){
+        let name_minus= nameuno.toLowerCase();
+        console.log(name_minus);
+        console.log(dias_semana[0] );
+        console.log(users[0].name)
+
+
+
+    }
+    else {
+        console.log("no tiene la longitud");
+    }
+  for (let i=0;i<dias_semana.length;i++){
+    console.log(dias_semana[i]);
+  }
+  //funciones 
+  console.log(variable);
+  function name_fuction(){
+    let variable = document.getElementById('variable').value;
+    variable = variable.toUpperCase();
+     document.getElementById("titulo").innerText = variable;
+     document.getElementById("titulo").style.color="green";
+
+
+  }
+  document.getElementById("name_event").addEventListener("dbclick", function(){
+    let variable = document.getElementById('variable').value;
+    document.getElementById("titulo").style.backgroundcolor="gray";
+  });
+    </script>
+</body>
+</html>
